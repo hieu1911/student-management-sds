@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Subject>
+    <Id>1</Id>
+    <Name>C#</Name>
+    <NumberOfLesson>4</NumberOfLesson>
+  </Subject>
+</DocumentElement>

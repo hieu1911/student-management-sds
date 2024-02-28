@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Student>
+    <Id>1</Id>
+    <Name>Nguyen Van A</Name>
+    <Gender>Nam</Gender>
+    <DateOfBirth>2000-01-01T00:00:00+07:00</DateOfBirth>
+    <ClassName>IT</ClassName>
+    <SchoolYear>65</SchoolYear>
+  </Student>
+</DocumentElement>

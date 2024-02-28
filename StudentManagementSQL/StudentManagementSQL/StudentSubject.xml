@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <StudentSubject>
+    <Id>1</Id>
+    <StudentId>1</StudentId>
+    <SubjectId>1</SubjectId>
+    <Confficient>0.3</Confficient>
+    <ProcessScore>8.5</ProcessScore>
+    <FinalScore>7</FinalScore>
+  </StudentSubject>
+</DocumentElement>

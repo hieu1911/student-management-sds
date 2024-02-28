@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SDS\\console\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
-      "projectName": "StudentManagement",
-      "projectPath": "D:\\SDS\\console\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+      "projectUniqueName": "D:\\SDS\\StudentManagementSQL\\StudentManagementSQL\\StudentManagementSQL.csproj",
+      "projectName": "StudentManagementSQL",
+      "projectPath": "D:\\SDS\\StudentManagementSQL\\StudentManagementSQL\\StudentManagementSQL.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\SDS\\console\\StudentManagement\\StudentManagement\\obj\\",
+      "outputPath": "D:\\SDS\\StudentManagementSQL\\StudentManagementSQL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

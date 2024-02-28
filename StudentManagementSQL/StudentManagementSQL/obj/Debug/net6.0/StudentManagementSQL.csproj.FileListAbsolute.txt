@@ -1,0 +1,15 @@
+D:\SDS\StudentManagementSQL\StudentManagementSQL\bin\Debug\net6.0\StudentManagementSQL.exe
+D:\SDS\StudentManagementSQL\StudentManagementSQL\bin\Debug\net6.0\StudentManagementSQL.deps.json
+D:\SDS\StudentManagementSQL\StudentManagementSQL\bin\Debug\net6.0\StudentManagementSQL.runtimeconfig.json
+D:\SDS\StudentManagementSQL\StudentManagementSQL\bin\Debug\net6.0\StudentManagementSQL.dll
+D:\SDS\StudentManagementSQL\StudentManagementSQL\bin\Debug\net6.0\StudentManagementSQL.pdb
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.csproj.AssemblyReference.cache
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.GeneratedMSBuildEditorConfig.editorconfig
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.AssemblyInfoInputs.cache
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.AssemblyInfo.cs
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.csproj.CoreCompileInputs.cache
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.dll
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\refint\StudentManagementSQL.dll
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.pdb
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\StudentManagementSQL.genruntimeconfig.cache
+D:\SDS\StudentManagementSQL\StudentManagementSQL\obj\Debug\net6.0\ref\StudentManagementSQL.dll

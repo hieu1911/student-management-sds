@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/2MXl9mLp08pO0VgA5HUrpYMtmD+/LHJns41UU2Em2GKm6CG5bnsBvbgGraav360RgpFS9JB+oO70jet9/9GMg==",
+  "dgSpecHash": "11soojLMpAAKvmrihjdLj1pu8wPmByMH9+cG+DF7EcdAdGmoTOVt/qXCe3XUFSKZsQxUprspYj1AGRacuhPF2w==",
   "success": true,
-  "projectFilePath": "D:\\SDS\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+  "projectFilePath": "D:\\SDS\\console\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
