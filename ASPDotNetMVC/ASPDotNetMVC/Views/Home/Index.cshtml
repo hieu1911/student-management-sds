@@ -1,0 +1,39 @@
+﻿@model StudentList
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <a asp-action="Add" class="btn btn-primary">Thêm mới</a>
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th class="text-center">Mã sinh viên</th>
+                <th>Tên sinh viên</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Lớp</th>
+                <th class="text-center">Khóa</th>
+                <th class="table-col-func">Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var student in Model.Students)
+            {
+                <tr>
+                    <td class="text-center">@student.Id</td>
+                    <td>@student.Name</td>
+                    <td>@student.Gender</td>
+                    <td>@student.DateOfBirth.ToString("dd/MM/yyy")</td>
+                    <td>@student.ClassName</td>
+                    <td class="text-center">@student.SchoolYear</td>
+                    <td class="text-center">
+                        <a class="btn btn-outline-info" href="@Url.Action("Index", "Subject", new {id = student.Id})">Xem lớp</a>
+                        <a class="btn btn-outline-primary">Sửa</a>
+                        <a class="btn btn-outline-danger">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
