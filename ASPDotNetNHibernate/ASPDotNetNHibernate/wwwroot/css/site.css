@@ -1,0 +1,52 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.table-col-func {
+    text-align: center;
+    width: 220px;
+}
+
+.score-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(241,252,246,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-form form {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.score-form form td {
+    color: #000;
+}
+
+.icon-close {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,113 @@
+﻿@model SubjectList
+@{
+    ViewData["Title"] = "Subject Page";
+}
+
+<div class="subject-wrapper">
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th class="text-center">Mã môn</th>
+                <th>Tên môn</th>
+                <th class="text-center">Số tiết học</th>
+                <th class="text-center">Hệ số điểm</th>
+                <th class="text-center">Điểm quá trình</th>
+                <th class="text-center">Điểm cuối kỳ</th>
+                <th class="text-center">Điểm tổng</th>
+                <th>Kết quả</th>
+                <th class="text-center">Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subject in Model.SubjectDetails)
+            {
+                <tr>
+                    <td class="text-center">@subject.Id</td>
+                    <td>@subject.Name</td>
+                    <td class="text-center">@subject.NumberOfLessons</td>
+                    <td class="text-center">@subject.Confficient</td>
+                    <td class="text-center">@subject.ProcessScore</td>
+                    <td class="text-center">@subject.FinalScore</td>
+                    <td class="text-center">@subject.Score</td>
+                    <td>@subject.Result</td>
+                    <td class="text-center">
+                        <button class="btn btn-outline-primary" onclick="showForm(@subject.Id)">Nhập điểm</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="score-form">
+        <form>
+            <table>
+                <tr>
+                    <td></td>
+                    <td class="d-flex justify-content-end">
+                        <img id="icon-close" src="~/assets/close.png" class="icon-close" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pe-2">Điểm quá trình</td>
+                    <td>
+                        <input id="process-score" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pe-2">Điểm cuối kỳ</td>
+                    <td>
+                        <input id="final-score" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="d-flex justify-content-end">
+                        <a id="btn-save" class="btn btn-primary mt-2">Lưu</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(".score-form").hide()
+    $("#icon-close").on("click", function() {
+        $(".score-form").hide()
+    })
+    $("#btn-save").on("click", function() {
+        console.log(1)
+        let processScore = parseFloat($("#process-score").val())
+        let finalScore = parseFloat($("#final-score").val())
+
+            console.log(processScore, finalScore)
+
+        $.ajax({
+            url: "@Url.Action("ChangeScore","Subject")",
+            method: "POST",
+            dataType: "json",
+            data: {
+                id: currentStudentSubjectId,
+                processScore,
+                finalScore
+            },
+            success: function (response) {
+                console.log(response)
+                $(".score-form").hide()
+                location.reload()
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+    })
+    var currentStudentSubjectId = 0;
+
+    function showForm(id) {
+        $(".score-form").show()
+        currentStudentSubjectId = id;
+    }
+
+</script>
